@@ -69,6 +69,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="13" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -94,26 +95,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;sqta.GroupCreationTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SquareTests.testArea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Marina_sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;first_tests.SquareTests.testArea&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -185,20 +166,38 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GroupCreationTests.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sqta.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sqta" />
+      <option name="MAIN_CLASS_NAME" value="sqta.GroupCreationTests" />
+      <option name="METHOD_NAME" value="testGroupCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Gradle.SquareTests.testArea" />
       <item itemvalue="Gradle.addressbook-web-tests [dependencies]" />
       <item itemvalue="Gradle.GroupCreationTests" />
       <item itemvalue="Gradle.addressbook-web-tests [clean]" />
       <item itemvalue="Gradle.addressbook-web-tests [test]" />
+      <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GroupCreationTests" />
+        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
         <item itemvalue="Gradle.addressbook-web-tests [dependencies]" />
         <item itemvalue="Gradle.addressbook-web-tests [test]" />
         <item itemvalue="Gradle.addressbook-web-tests [clean]" />
-        <item itemvalue="Gradle.SquareTests.testArea" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +212,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582559711193</updated>
       <workItem from="1582559715126" duration="8822000" />
-      <workItem from="1582661750298" duration="3987000" />
+      <workItem from="1582661750298" duration="6690000" />
     </task>
     <servers />
   </component>
