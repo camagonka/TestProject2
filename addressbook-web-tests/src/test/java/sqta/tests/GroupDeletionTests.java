@@ -1,4 +1,4 @@
-package sqta;
+package sqta.tests;
 
 import org.testng.annotations.Test;
 
@@ -6,10 +6,10 @@ public class GroupDeletionTests extends TestBase{
 
     @Test
     public void testGroupDeletionTests() throws Exception{
-        gotoGroupPage();
-        selectGroup();
-        deleteSelectedGroups();
-        returnToGroupPage();
+        app.gotoGroupPage();
+        app.selectGroup();
+        app.deleteSelectedGroups();
+        app.returnToGroupPage();
     }
 
 }

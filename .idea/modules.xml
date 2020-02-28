@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Marina_sandbox.iml" filepath="$PROJECT_DIR$/.idea/modules/Marina_sandbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Marina_sandbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Marina_sandbox.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Marina_sandbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Marina_sandbox.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestProject2.Marina_sandbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestProject2.Marina_sandbox.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestProject2.Marina_sandbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestProject2.Marina_sandbox.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestProject2.addressbook-web-tests.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TestProject2.addressbook-web-tests.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestProject2.addressbook-web-tests.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TestProject2.addressbook-web-tests.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests.iml" />

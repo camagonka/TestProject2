@@ -8,6 +8,8 @@
       <module name="Marina_sandbox.test" target="1.8" />
       <module name="TestProject2.addressbook-web-tests.main" target="1.8" />
       <module name="TestProject2.addressbook-web-tests.test" target="1.8" />
+      <module name="TestProject2.Marina_sandbox.main" target="1.8" />
+      <module name="TestProject2.Marina_sandbox.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package sqta;
+package sqta.model;
 
 public class GroupData {
     private final String name;
