@@ -45,7 +45,8 @@
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Marina_sandbox" type="f1a62948:ProjectNode" />
+                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -76,6 +77,11 @@
     <property name="project.structure.side.proportion" value="0.40735295" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sqta" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -88,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCreationTests">
+  <component name="RunManager" selected="TestNG.GroupDeletionTests">
     <configuration name="GroupCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -109,7 +115,7 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="addressbook-web-tests [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="addressbook-web-tests [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
@@ -120,7 +126,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="classes" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,7 +134,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="addressbook-web-tests [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="addressbook-web-tests [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
@@ -139,7 +145,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="compileTestJava" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,26 +153,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="addressbook-web-tests [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupCreationTests.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -175,8 +162,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="sqta" />
-      <option name="MAIN_CLASS_NAME" value="sqta.GroupCreationTests" />
-      <option name="METHOD_NAME" value="testGroupCreation" />
+      <option name="MAIN_CLASS_NAME" value="sqta.GroupDeletionTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupDeletionTests.testGroupDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sqta.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sqta" />
+      <option name="MAIN_CLASS_NAME" value="sqta.GroupDeletionTests" />
+      <option name="METHOD_NAME" value="testGroupDeletionTests" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -185,19 +189,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.addressbook-web-tests [dependencies]" />
       <item itemvalue="Gradle.GroupCreationTests" />
-      <item itemvalue="Gradle.addressbook-web-tests [clean]" />
-      <item itemvalue="Gradle.addressbook-web-tests [test]" />
-      <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
+      <item itemvalue="TestNG.GroupDeletionTests" />
+      <item itemvalue="TestNG.GroupDeletionTests.testGroupDeletionTests" />
+      <item itemvalue="Gradle.addressbook-web-tests [classes]" />
+      <item itemvalue="Gradle.addressbook-web-tests [compileTestJava]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="Gradle.addressbook-web-tests [compileTestJava]" />
+        <item itemvalue="Gradle.addressbook-web-tests [classes]" />
+        <item itemvalue="TestNG.GroupDeletionTests.testGroupDeletionTests" />
         <item itemvalue="Gradle.GroupCreationTests" />
-        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="Gradle.addressbook-web-tests [dependencies]" />
-        <item itemvalue="Gradle.addressbook-web-tests [test]" />
-        <item itemvalue="Gradle.addressbook-web-tests [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +216,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582559711193</updated>
       <workItem from="1582559715126" duration="8822000" />
-      <workItem from="1582661750298" duration="6690000" />
+      <workItem from="1582661750298" duration="9019000" />
     </task>
     <servers />
   </component>
