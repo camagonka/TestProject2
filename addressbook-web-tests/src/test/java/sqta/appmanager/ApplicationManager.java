@@ -1,15 +1,15 @@
 package sqta.appmanager;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    FirefoxDriver driver;
+    WebDriver driver;
 
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
@@ -17,10 +17,23 @@ public class ApplicationManager {
     // private String baseUrl;
     private boolean acceptNextAlert = true;
     private StringBuffer verificationErrors = new StringBuffer();
+    private String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
 
     public void init() {
-        System.setProperty("webdriver.gecko.driver", "C:\\SeleniumGecko\\geckodriver.exe");
-        driver = new FirefoxDriver();
+        //System.setProperty("webdriver.gecko.driver", "C:\\SeleniumGecko\\geckodriver.exe");
+        if (browser == BrowserType.FIREFOX) {
+            driver = new FirefoxDriver();
+        }
+        else if (browser == BrowserType.CHROME) {
+            driver = new ChromeDriver();
+        }
+        else if (browser == BrowserType.IE) {
+            driver = new InternetExplorerDriver();
+        }
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.get("http://localhost/addressbook/group.php");
         groupHelper = new GroupHelper(driver);
@@ -28,8 +41,6 @@ public class ApplicationManager {
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "secret");
     }
-
-
 
     public void stop() {
         driver.close();

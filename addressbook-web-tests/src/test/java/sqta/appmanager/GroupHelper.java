@@ -1,14 +1,15 @@
 package sqta.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import sqta.model.GroupData;
 
 public class GroupHelper {
-    private FirefoxDriver driver;
+    private WebDriver driver;
 
 
-    public GroupHelper(FirefoxDriver driver) {
+    public GroupHelper(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -42,5 +43,13 @@ public class GroupHelper {
 
     public void selectGroup() {
         driver.findElement(By.name("selected[]")).click();
+    }
+
+    public void initGroupModification() {
+        driver.findElement(By.name("edit")).click();
+    }
+
+    public void submitGroupModification() {
+        driver.findElement(By.name("update")).click();
     }
 }
