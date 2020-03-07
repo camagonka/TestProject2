@@ -8,6 +8,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/Marina_sandbox">
       <ProjectState />
@@ -40,6 +54,12 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -68,13 +88,16 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="13" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40735295" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="sqta.model" />
       <recent name="sqta.appmanager" />
       <recent name="sqta" />
     </key>
@@ -91,8 +114,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupModificationTests.testGroupModificationTests">
-    <configuration name="addressbook-web-tests [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
+    <configuration name="addressbook-web-tests [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
@@ -103,7 +126,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="compileTestJava" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -129,6 +152,23 @@
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sqta.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sqta.tests" />
+      <option name="MAIN_CLASS_NAME" value="sqta.tests.ContactCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
@@ -165,38 +205,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupModificationTests.testGroupModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sqta.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sqta.tests" />
-      <option name="MAIN_CLASS_NAME" value="sqta.tests.GroupModificationTests" />
-      <option name="METHOD_NAME" value="testGroupModificationTests" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Gradle.addressbook-web-tests [compileTestJava]" />
-      <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
-      <item itemvalue="TestNG.GroupModificationTests.testGroupModificationTests" />
       <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
+      <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
+      <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="Gradle.addressbook-web-tests [clean]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupModificationTests.testGroupModificationTests" />
+        <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="Gradle.addressbook-web-tests [clean]" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
-        <item itemvalue="Gradle.addressbook-web-tests [compileTestJava]" />
+        <item itemvalue="TestNG.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +234,9 @@
       <updated>1582559711193</updated>
       <workItem from="1582559715126" duration="8822000" />
       <workItem from="1582661750298" duration="15174000" />
-      <workItem from="1582976062518" duration="1325000" />
+      <workItem from="1582976062518" duration="5253000" />
+      <workItem from="1583064482270" duration="12082000" />
+      <workItem from="1583496271389" duration="2680000" />
     </task>
     <servers />
   </component>
