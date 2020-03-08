@@ -114,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactCreationTests">
+  <component name="RunManager" selected="TestNG.GroupModificationTests">
     <configuration name="addressbook-web-tests [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,7 +170,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -179,7 +179,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="sqta.tests" />
-      <option name="MAIN_CLASS_NAME" value="sqta.tests.GroupCreationTests" />
+      <option name="MAIN_CLASS_NAME" value="sqta.tests.GroupDeletionTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -207,17 +207,17 @@
     <list>
       <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.GroupModificationTests" />
-      <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
-      <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="Gradle.addressbook-web-tests [clean]" />
+      <item itemvalue="TestNG.GroupDeletionTests" />
+      <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="Gradle.addressbook-web-tests [clean]" />
-        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.GroupModificationTests" />
         <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
+        <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="Gradle.addressbook-web-tests [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +235,7 @@
       <workItem from="1582661750298" duration="15174000" />
       <workItem from="1582976062518" duration="5253000" />
       <workItem from="1583064482270" duration="12082000" />
-      <workItem from="1583496271389" duration="10014000" />
+      <workItem from="1583496271389" duration="11015000" />
     </task>
     <servers />
   </component>
