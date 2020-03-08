@@ -35,7 +35,7 @@ public class ApplicationManager {
         else if (browser == BrowserType.IE) {
             driver = new InternetExplorerDriver();
         }
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://localhost/addressbook/group.php");
         groupHelper = new GroupHelper(driver);
         navigationHelper = new NavigationHelper(driver);
@@ -51,15 +51,6 @@ public class ApplicationManager {
               fail(verificationErrorString);
           }*/
     }
-
-    private boolean isElementPresent(By by) {
-          try {
-              driver.findElement(by);
-              return true;
-          } catch (NoSuchElementException e) {
-              return false;
-          }
-      }
 
     private boolean isAlertPresent() {
           try {
