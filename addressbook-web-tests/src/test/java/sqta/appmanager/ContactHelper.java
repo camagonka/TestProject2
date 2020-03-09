@@ -1,6 +1,8 @@
 package sqta.appmanager;
 
 
+import jdk.nashorn.internal.runtime.regexp.joni.exception.ErrorMessages;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -41,5 +43,33 @@ public class ContactHelper extends HelperBase{
 
     public void submitContactModification() {
         driver.findElement(By.xpath("//input[@value='Update']")).click();
+    }
+
+
+    public void createContact(ContactData contactData, boolean creation) {
+        initContactCreation();
+        fillContactForm(contactData, creation);
+        submitContactCreation();
+        returnToHomePage();
+    }
+
+    public boolean isThereContact() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public void initContactDeletion() {
+        driver.findElement(By.name("selected[]")).click();
+    }
+
+    public void submitContactDeletion() {
+        driver.findElement(By.xpath("//input[@value='Delete']")).click();
+
+        //нажатие ОК
+        Alert alert = driver.switchTo().alert();
+        ((Alert) alert).accept();
+
+        //нажатие Cancel
+       /* Alert alert = driver.switchTo().alert();
+        ((Alert) alert).dismiss();        */
     }
 }
