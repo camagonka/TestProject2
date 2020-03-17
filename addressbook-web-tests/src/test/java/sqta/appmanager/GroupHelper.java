@@ -40,8 +40,8 @@ public class GroupHelper extends HelperBase {
         driver.findElement(By.name("delete")).click();
     }
 
-    public void selectGroup() {
-        driver.findElement(By.name("selected[]")).click();
+    public void selectGroup(int index) {
+        driver.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void initGroupModification() {
@@ -61,5 +61,9 @@ public class GroupHelper extends HelperBase {
 
     public boolean isThereGroup() {
         return isElementPresent(By.name("selected[]"));
+    }
+
+    public int getGroupCount() {
+       return driver.findElements(By.name("selected[]")).size();
     }
 }
