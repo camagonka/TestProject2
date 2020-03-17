@@ -122,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDeletionTests">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration name="addressbook-web-tests [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -222,10 +222,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupDeletionTests" />
         <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
+        <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
         <item itemvalue="Gradle.addressbook-web-tests [clean]" />
       </list>
     </recent_temporary>
@@ -244,7 +244,7 @@
       <workItem from="1582661750298" duration="15174000" />
       <workItem from="1582976062518" duration="5253000" />
       <workItem from="1583064482270" duration="12082000" />
-      <workItem from="1583496271389" duration="21705000" />
+      <workItem from="1583496271389" duration="23020000" />
     </task>
     <servers />
   </component>
