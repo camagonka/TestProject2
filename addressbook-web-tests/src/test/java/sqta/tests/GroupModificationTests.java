@@ -29,6 +29,7 @@ public class GroupModificationTests extends TestBase{
         before.remove(before.size()-1);
         before.add(group);
 
+        //Сортировка списка с помощью компоратора
         Comparator<? super GroupData> byId = Comparator.comparingInt(GroupData::getId);
         before.sort(byId);
         after.sort(byId);
