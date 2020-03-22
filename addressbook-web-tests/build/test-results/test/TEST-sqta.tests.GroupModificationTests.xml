@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sqta.tests.GroupModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-22T12:35:47" hostname="Marina-PC" time="3.194">
+  <properties/>
+  <testcase name="testGroupModificationTests" classname="sqta.tests.GroupModificationTests" time="3.194"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1584880539972	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\MARINA~1\\AppData\\Local\\Temp\\rust_mozprofileppcKFV"
+1584880540809	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584880541347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584880541347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584880541347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584880541347	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1584880545706	Marionette	INFO	Listening on port 52374
+1584880545755	Marionette	WARN	TLS certificate errors will be ignored for this session
+мар. 22, 2020 3:35:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
