@@ -22,6 +22,11 @@ public class GroupCreationTests extends TestBase {
         //Использование компоратора для выявления максимального id
         group.setId(after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId());
         before.add(group);
-        Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+
+        //Сортировка списка с помощью компоратора
+        Comparator<? super GroupData> byId = Comparator.comparingInt(GroupData::getId);
+        before.sort(byId);
+        after.sort(byId);
+        Assert.assertEquals(before, after);
     }
 }
