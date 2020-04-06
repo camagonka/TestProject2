@@ -56,7 +56,7 @@ public class GroupHelper extends HelperBase {
         driver.findElement(By.name("update")).click();
     }
 
-    public void createGroup(GroupData group) {
+    public void create(GroupData group) {
         initGroupCreation();
         fillGroupCreation(group);
         submitGroupCreation();
@@ -71,7 +71,7 @@ public class GroupHelper extends HelperBase {
         return driver.findElements(By.name("selected[]")).size();
     }
 
-    public List<GroupData> getGroupList() {
+    public List<GroupData> list() {
         List<GroupData> groups = new ArrayList<GroupData>();
         List<WebElement> elements = driver.findElements(By.cssSelector("span.group"));
         for (WebElement element : elements) {
@@ -81,5 +81,18 @@ public class GroupHelper extends HelperBase {
             groups.add(group);
         }
         return groups;
+    }
+
+    public void modify(GroupData group) {
+        initGroupModification();
+        fillGroupCreation(group);
+        submitGroupModification();
+        returnToGroupPage();
+    }
+
+    public void delete(int index) {
+        selectGroup(index);
+        deleteSelectedGroups();
+        returnToGroupPage();
     }
 }

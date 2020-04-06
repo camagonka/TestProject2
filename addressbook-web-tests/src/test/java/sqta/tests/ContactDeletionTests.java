@@ -11,11 +11,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ContactDeletionTests extends TestBase {
-    WebDriver driver;
 
-    @Test
+    @Test(enabled = false)
     public void testContactDeletionTests() throws Exception {
-        app.getNavigationHelper().gotoContactPage();
+        app.goTo().gotoContactPage();
         if (!app.getContactHelper().isThereContact()) {
             app.getContactHelper().createContact(new ContactData("firstname", "test2", "test_surname"), true);
         }

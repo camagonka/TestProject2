@@ -9,9 +9,9 @@ import java.util.List;
 
 public class ContactModificationTests extends TestBase {
 
-    @Test
+    @Test(enabled = false)
     public void testContactModification() {
-        app.getNavigationHelper().gotoContactPage();
+        app.goTo().gotoContactPage();
         if(! app.getContactHelper().isThereContact()){
             app.getContactHelper().createContact(new ContactData("firstname", "test2", "test_surname"), true);
         }
