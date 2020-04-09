@@ -14,12 +14,12 @@ public class GroupCreationTests extends TestBase {
     public void testGroupCreation() throws Exception {
         app.goTo().groupPage();
         List<GroupData> before = app.group().list();
-        GroupData group = new GroupData("test7", null, null);
+        GroupData group = new GroupData().withName("test7");
         app.group().create(group);
         List<GroupData> after = app.group().list();
         Assert.assertEquals(after.size(), before.size() + 1);
         //спользование компоратора для выявления максимального id
-        group.setId(after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId());
+        group.withId(after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId());
         before.add(group);
 
         //Сортировка списка с помощью компоратора
