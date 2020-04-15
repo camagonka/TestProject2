@@ -13,6 +13,7 @@ import java.util.Set;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.*;
+import static org.testng.Assert.*;
 
 
 public class GroupCreationTests extends TestBase {
@@ -30,9 +31,9 @@ public class GroupCreationTests extends TestBase {
 
         // List<GroupData> after = app.group().list();
         //Set<GroupData> after = app.group().all();
+        assertEquals(app.group().getGroupCount(), before.size()+1);
         Groups after = app.group().all2();
-
-        Assert.assertEquals(after.size(), before.size() + 1);
+        
         //спользование компоратора для выявления максимального id
         // group.withId(after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId());
         //group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
@@ -47,5 +48,16 @@ public class GroupCreationTests extends TestBase {
       //Assert.assertEquals(before, after);
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+    }
+
+    @Test
+    public void testBadGroupCreation() throws Exception {
+        app.goTo().groupPage();
+        Groups before = app.group().all2();
+        GroupData group = new GroupData().withName("test7'");
+        app.group().create(group);
+        assertEquals(app.group().getGroupCount(), before.size());
+        Groups after = app.group().all2();
+        assertThat(after, equalTo(before));
     }
 }

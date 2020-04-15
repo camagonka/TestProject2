@@ -272,7 +272,7 @@
       <workItem from="1585832989192" duration="11223000" />
       <workItem from="1586171085457" duration="2855000" />
       <workItem from="1586432633617" duration="5362000" />
-      <workItem from="1586865678030" duration="4756000" />
+      <workItem from="1586865678030" duration="5747000" />
     </task>
     <servers />
   </component>
@@ -296,32 +296,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/appmanager/GroupHelper.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/tests/GroupDeletionTests.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/tests/GroupDeletionTests.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/appmanager/GroupHelper.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Marina_sandbox$GroupDeletionTests_testGroupDeletionTests.ic" NAME="GroupDeletionTests.testGroupDeletionTests Coverage Results" MODIFIED="1586173495379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
