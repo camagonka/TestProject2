@@ -146,7 +146,7 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.sqta.tests">
-    <configuration name="addressbook-web-tests [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="addressbook-web-tests [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
@@ -157,7 +157,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,7 +165,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="addressbook-web-tests [processTestResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="addressbook-web-tests [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
@@ -176,7 +176,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="processTestResources" />
+            <option value="testClasses" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -235,19 +235,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.addressbook-web-tests [processTestResources]" />
       <item itemvalue="TestNG.GroupCreationTests" />
-      <item itemvalue="Gradle.addressbook-web-tests [dependencies]" />
       <item itemvalue="TestNG.GroupDeletionTests" />
       <item itemvalue="TestNG.sqta.tests" />
+      <item itemvalue="Gradle.addressbook-web-tests [clean]" />
+      <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.sqta.tests" />
         <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="Gradle.addressbook-web-tests [testClasses]" />
+        <item itemvalue="Gradle.addressbook-web-tests [clean]" />
         <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="Gradle.addressbook-web-tests [dependencies]" />
-        <item itemvalue="Gradle.addressbook-web-tests [processTestResources]" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +272,7 @@
       <workItem from="1585832989192" duration="11223000" />
       <workItem from="1586171085457" duration="2855000" />
       <workItem from="1586432633617" duration="5362000" />
-      <workItem from="1586865678030" duration="3711000" />
+      <workItem from="1586865678030" duration="4756000" />
     </task>
     <servers />
   </component>
@@ -296,6 +296,32 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/appmanager/GroupHelper.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/tests/GroupDeletionTests.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/tests/GroupDeletionTests.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/sqta/appmanager/GroupHelper.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Marina_sandbox$GroupDeletionTests_testGroupDeletionTests.ic" NAME="GroupDeletionTests.testGroupDeletionTests Coverage Results" MODIFIED="1586173495379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
